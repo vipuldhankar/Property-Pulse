@@ -7,7 +7,7 @@ async function fetchproperties() {
        }
        try {
               const response = await fetch(
-                     `${apiDomain}/api/properties`
+                     `${apiDomain}/api/properties`, { cache: 'no-store' }
               );
               if (!response.ok) {
                      throw new Error("failed to fetch data");
@@ -40,4 +40,4 @@ async function fetchproperty(id) {
 }
 
 
-export { fetchproperties,fetchproperty };
+export { fetchproperties, fetchproperty };

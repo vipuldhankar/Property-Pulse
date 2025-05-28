@@ -1,9 +1,11 @@
 import PropertyCard from "@/components/PropertyCard";
 import { fetchproperties } from "@/utils/requests";
-
+import { getSessionUser } from '@/utils/getSessionUser';
+import cloudinary from '@/config/cloudinary';
 
 const PropertiesPage = async () => {
-  const properties = await fetchproperties();
+  const response = await fetchproperties();
+  const properties = response.properties || [];  // Access the properties array
 
   properties.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 

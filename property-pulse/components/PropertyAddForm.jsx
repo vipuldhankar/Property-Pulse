@@ -81,7 +81,6 @@ const PropertyAddForm = () => {
     }));
   };
 
-  
   const handleImageChange = (e) => {
     const { files } = e.target;
 
@@ -257,7 +256,7 @@ const PropertyAddForm = () => {
               required
               value={fields.square_feet}
               onChange={handleChange}
-            />
+            /> 
           </div>
         </div>
 
@@ -584,4 +583,4 @@ const PropertyAddForm = () => {
     )
   );
 };
-export default PropertyAddForm;
+export default PropertyAddForm;  
