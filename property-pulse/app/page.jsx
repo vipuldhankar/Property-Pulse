@@ -9,10 +9,10 @@ const Homepage = async () => {
     <div>
       <Hero />
       <InfoBoxes />
-      <FeaturedProperties/>  
+      <FeaturedProperties />
       <HomeProperties />
     </div>
   );
-}; 
+};
 
 export default Homepage;
