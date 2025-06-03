@@ -56,7 +56,7 @@ const PropertyPage = () => {
                 href="/properties"
                 className="text-blue-500 hover:text-blue-600 flex items-center"
               >
-                <FaArrowLeft className="mr-2" /> Back to Properties back
+                <FaArrowLeft className="mr-2" /> Back to Properties
               </Link>
             </div>
           </section>
@@ -70,11 +70,7 @@ const PropertyPage = () => {
                 <aside className="space-y-4">
                   <BookmarkButton property={property} />
                   <ShareButtons property={property} />
-            <PropertyContectForm property={property} /> 
-
-
-
-           
+                  <PropertyContectForm property={property} />
                 </aside>
               </div>
             </div>
